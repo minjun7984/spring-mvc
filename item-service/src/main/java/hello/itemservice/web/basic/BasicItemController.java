@@ -40,11 +40,6 @@ public class BasicItemController {
         return "basic/addForm";
     }
 
-    //@PostMapping("/add")
-    public String save(){
-        return "basic/addForm";
-    }
-
     @PostMapping("/add")
     public String addItemV6(Item item, RedirectAttributes redirectAttributes){
         Item savedItem = itemRepository.save(item);
